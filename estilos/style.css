@@ -149,6 +149,59 @@ footer {
   padding: 10px 0;
 }
 
+/* Formulario de contacto */
+.body-contacto {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contacto {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.contacto h1 {
+  margin-bottom: 15px;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+}
+.contacto form label {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.contacto form input, .contacto form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contacto form button {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.contacto form button:hover {
+  background-color: #0056b3;
+}
+
 /* Diseño responsive */
 @media (max-width: 768px) {
   .navbar-nav {
