@@ -23,20 +23,29 @@ body {
 }
 
 /* Navbar */
-.navbar {
+// Mixin para el estilo del navbar
+@mixin navbar-styles($highlight-color) {
     &-brand img {
-        border-radius: 50%;
-        margin-right: 10px;
+      border-radius: 50%;
+      margin-right: 10px;
     }
+  
     &-nav {
-        .nav-link {
-            font-size: 1.1rem;
-            &:hover {
-                color: $highlight-color;
-            }
+      .nav-link {
+        font-size: 1.1rem;
+  
+        &:hover {
+          color: $highlight-color;
         }
+      }
     }
-}
+  }
+  
+  // Uso del mixin en la clase .navbar
+  .navbar {
+    @include navbar-styles($highlight-color);
+  }
+  
 
 /* Contenido de imágenes y videos */
 .contenido1 {
